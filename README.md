@@ -1,33 +1,96 @@
-# PastryMaster
+# PastryMaster 🍰
 
-A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
+PastryMaster is a 2D bakery simulation game developed using Java and LibGDX.
 
-This project was generated with a template including simple application launchers and an `ApplicationAdapter` extension that draws libGDX logo.
+The player prepares desserts by selecting ingredients, cooking recipes, and decorating cakes while progressing through multiple levels.
 
-## Platforms
+---
 
-- `core`: Main module with the application logic shared by all platforms.
-- `lwjgl3`: Primary desktop platform using LWJGL3; was called 'desktop' in older docs.
+# Features
 
-## Gradle
+- Multiple gameplay screens
+- Drag-and-drop mechanics
+- Recipe memorization system
+- Decoration system
+- Background music and sound effects
+- Level progression
+- Hearts/Life system
+- Interactive UI
 
-This project uses [Gradle](https://gradle.org/) to manage dependencies.
-The Gradle wrapper was included, so you can run Gradle tasks using `gradlew.bat` or `./gradlew` commands.
-Useful Gradle tasks and flags:
+---
 
-- `--continue`: when using this flag, errors will not stop the tasks from running.
-- `--daemon`: thanks to this flag, Gradle daemon will be used to run chosen tasks.
-- `--offline`: when using this flag, cached dependency archives will be used.
-- `--refresh-dependencies`: this flag forces validation of all dependencies. Useful for snapshot versions.
-- `build`: builds sources and archives of every project.
-- `cleanEclipse`: removes Eclipse project data.
-- `cleanIdea`: removes IntelliJ project data.
-- `clean`: removes `build` folders, which store compiled classes and built archives.
-- `eclipse`: generates Eclipse project data.
-- `idea`: generates IntelliJ project data.
-- `lwjgl3:jar`: builds application's runnable jar, which can be found at `lwjgl3/build/libs`.
-- `lwjgl3:run`: starts the application.
-- `test`: runs unit tests (if any).
+# Technologies Used
 
-Note that most tasks that are not specific to a single project can be run with `name:` prefix, where the `name` should be replaced with the ID of a specific project.
-For example, `core:clean` removes `build` folder only from the `core` project.
+- Java
+- LibGDX
+- Scene2D UI
+- Gradle
+
+---
+
+# Project Structure
+
+core/
+├── screens/
+├── GameState.java
+├── LevelData.java
+├── Main.java
+
+assets/
+├── bg/
+├── sounds/
+├── desserts/
+├── decor/
+
+---
+
+# Gameplay Flow
+
+Main Menu
+→ Chef Selection
+→ Recipe Screen
+→ Cooking Screen
+→ Decoration Screen
+→ Win Screen
+
+---
+
+# Design Patterns Used
+
+- Facade Pattern
+- Factory Method Pattern
+- State Pattern
+- Template Method Pattern
+- Observer/Listener Pattern
+
+---
+
+# How to Run
+
+1. Clone the repository
+2. Open project in IntelliJ IDEA
+3. Run Lwjgl3Launcher.java
+
+---
+
+# Team Responsibilities
+
+### Gameplay & UI
+- Screens
+- Drag and Drop
+- Music & Sounds
+- Decorations
+
+### Architecture & Logic
+- GameState
+- Level Logic
+- Design Patterns
+- UML Diagrams
+
+---
+
+# Authors
+
+- Kenges Karakat
+- Sovetova Zhansaya
+- Narxoz University
