@@ -1,0 +1,91 @@
+# PastryMaster Project Documentation
+
+## Introduction
+
+PastryMaster is a bakery-themed educational game created with Java and LibGDX.
+The goal of the game is to complete dessert recipes by selecting correct ingredients and decorating cakes.
+
+---
+
+# System Architecture
+
+The project follows an object-oriented modular structure.
+
+Main components:
+
+- Main.java → starts the game
+- GameState.java → stores shared global data
+- screens package → handles gameplay screens
+- assets folder → stores textures and sounds
+
+---
+
+# Main Screens
+
+## MainMenuScreen
+Displays the main menu and starts the game.
+
+## ChefSelectScreen
+Allows the player to choose a chef character.
+
+## RecipeScreen
+Shows the recipe before gameplay starts.
+
+## CookingScreen
+Main gameplay mechanics occur here.
+
+## DecorationScreen
+Player decorates the final dessert.
+
+## WinScreen
+Displays score and level completion.
+
+---
+
+# Audio System
+
+The game contains:
+- background music
+- click sounds
+- success/error effects
+
+All sounds are loaded inside GameState.
+
+---
+
+# Design Patterns
+
+## Facade Pattern
+Used in Main.java for simplified game startup.
+
+## Factory Method
+Used for creating ingredients and decorations dynamically.
+
+## State Pattern
+Used for level progression and gameplay state handling.
+
+## Template Method
+Used through Screen lifecycle methods.
+
+## Observer Pattern
+Used through ClickListener and UI events.
+
+---
+
+# Gameplay Mechanics
+
+- Drag-and-drop ingredient selection
+- Timer-based recipe memorization
+- Multiple recipe levels
+- Heart/life system
+- Decoration mechanics
+
+---
+
+# Conclusion
+
+The project successfully demonstrates:
+- Java OOP principles
+- Game architecture
+- Design pattern implementation
+- LibGDX development workflow
